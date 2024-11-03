@@ -1,3 +1,12 @@
+var input = document.getElementById("taskInput");
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+      document.getElementById("addTaskButton").click();
+    }
+  }); 
+
 function addTask() {
     const taskInput = document.getElementById('taskInput');
     const taskList = document.getElementById('taskList');
